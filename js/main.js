@@ -1,6 +1,6 @@
 $.noConflict();
 jQuery(document).ready(function($) {
-var h_hght = 35;
+var h_hght = 50;
 var h_mrg = 0;   
 $(function(){   
     var elem = $('.navbar__main');
@@ -38,22 +38,20 @@ $(document).ready(function() {
 });
 });
 
+// var nav__tel1 = document.querySelector('#nav__tel1');
+// var nav__tel2 = document.querySelector('#nav__tel2');
+// var nav__mail = document.querySelector('#nav__mail');
 
-
-var nav__tel1 = document.querySelector('#nav__tel1');
-var nav__tel2 = document.querySelector('#nav__tel2');
-var nav__mail = document.querySelector('#nav__mail');
-
-const media575 = window.matchMedia('(max-width: 575.98px)');
-if (media575.matches) {
-    nav__tel1.innerHTML = '<i class="fas fa-phone-volume fa-lg">1';
-    nav__tel2.innerHTML = '<i class="fas fa-phone-volume fa-lg">2';
-    nav__mail.innerHTML = '<i class="fas fa-envelope fa-lg"></i>';
-} else {
-    nav__tel1.innerHTML = '<i class="fas fa-phone-volume fa-lg"></i>+7-999-999-99-99</a>';
-    nav__tel2.innerHTML = '<i class="fas fa-phone-volume fa-lg"></i>+7-999-999-99-99</a>';
-    nav__mail.innerHTML = '<i class="fas fa-envelope fa-lg"></i>loremipsum@gmail.com';
-}
+// const media575 = window.matchMedia('(max-width: 767.98px)');
+// if (media575.matches) {
+//     nav__tel1.innerHTML = '<i class="fas fa-phone-volume fa-lg" style="font-size: 20px; height: 30px; width: 30px; padding-top: 7px;"></i>';
+//     nav__tel2.innerHTML = '<i class="fas fa-mobile-alt fa-lg" style="font-size: 20px; height: 30px; width: 30px; padding-top: 7px;"></i></i>';
+//     nav__mail.innerHTML = '<i class="fas fa-envelope fa-lg" style="font-size: 20px; height: 30px; width: 30px; padding-top: 7px;"></i>';
+// } else {
+//     nav__tel1.innerHTML = '<i class="fas fa-phone-volume"></i>';
+//     nav__tel2.innerHTML = '<i class="fas fa-mobile-alt"></i>';
+//     nav__mail.innerHTML = '<i class="fas fa-envelope"></i>';
+// }
 
 var animAboutUs = anime({
     targets: '.about-us',
@@ -76,9 +74,32 @@ var animClients = anime({
     autoplay: false,
     easing: 'spring(1, 80, 100, 0)'
 });
+// var servBut1 = document.querySelector('#servBut1');
+// var servBut2 = document.querySelector('#servBut2');
+// var servBut3 = document.querySelector('#servBut3');
+// var servBut4 = document.querySelector('#servBut4');
 
+// const media991 = window.matchMedia('(max-width: 991.98px)');
+// if(media991.matches) {
+//     servBut1.innerHTML = '<i class="fas fa-fan"></i> Подбор и поставка оборудования';
+//     servBut2.innerHTML = '<i class="fas fa-toolbox"></i> Монтаж оборудования';
+//     servBut3.innerHTML = '<i class="fas fa-tools"></i> Сборка холодильных камер';
+//     servBut4.innerHTML = '<i class="fas fa-tools"></i> Сервисное обслуживание';
+// } else {
+//     servBut1.innerHTML = '<i class="fas fa-fan"></i> Подбор и поставка холодильного оборудования';
+//     servBut2.innerHTML = '<i class="fas fa-toolbox"></i> Монтаж торгового и промышленного холодильного оборудования';
+//     servBut3.innerHTML = '<i class="fas fa-tools"></i> Сборка холодильных камер';
+//     servBut4.innerHTML = '<i class="fas fa-tools"></i> Сервисное обслуживание холодильного оборудования';
+// };
+var animServices = anime({
+    targets: '.services',
+    translateY: -200,
+    opacity: 1,
+    autoplay: false,
+    easing: 'spring(1, 80, 70, 0)'
+});
 document.addEventListener('scroll', function() {
-    // animServices.seek(window.pageYOffset * 1.8);
+    animServices.seek(window.pageYOffset * 1.8);
     animAboutUs.seek(window.pageYOffset * 1.2);
     animObjects.seek(window.pageYOffset * 0.9);
     animClients.seek(window.pageYOffset * 0.9);

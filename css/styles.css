@@ -10,22 +10,26 @@ img {
 	height: auto;
 }
 .navbar__contacts {
-	max-height: 35px;
+	height: 50px;
 	margin: 0 0 91px 0;
 }
-.navbar__contacts img {
-	max-width: 24px;
-	margin: 0 5px;
+.ya-share2__link {
+	padding: 0px !important;
 }
 .navbar__contacts a {
 	color: #00CCFF;
+	line-height: 20px;
+	padding: 0;
 }
 .navbar__contacts .fas {
-	color: #303030;
-	padding: 0 4px 0 0;
-}
-.ya-share2 {
-	padding: 7px;
+	color: #000;
+	font-size: 30px;
+	background-color: #EEE;
+	border-radius: 50%;
+	height: 48px;
+ 	width: 48px;
+ 	text-align: center;
+ 	padding: 8px 0 0 0;
 }
 .navbar__main .navbar-brand {
 	padding: 0;
@@ -36,7 +40,7 @@ img {
 .navbar__main {
 	background-color: #F8F8F8;
 	font-size: 18px;
-	top: 35px;
+	top: 50px;
 }
 .navbar__main__menu a {
 	text-transform: uppercase;
@@ -98,9 +102,10 @@ img {
 }
 .services__buttons button {
 	padding: 9px 22px;
-	margin: 10px 0 0 0;
+	margin: 20px 0 0 0;
 	border-radius: 5px;
 	font-size: 18px;
+	width: 100%;
 }
 .services__buttons .fas {
 	padding: 0 8px 0 0;
@@ -130,11 +135,14 @@ img {
 	margin: 30px 0 0 0;
 	border-radius: 5px;
 	font-size: 18px;
-	
 }
 .about-us h2 {
-	padding: 0 0 50px 0;
+	padding: 0 0 40px 0;
 }
+.about-us .about-us__left-side__bottom h4 {
+	padding: 20px 0 20px 0;
+}
+
 .clients {
 	padding: 0 0 40px 0;
 	background-color: #FFF;
@@ -305,10 +313,10 @@ img {
 	}
 }
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
-	.services__buttons button {
+	/*.services__buttons button {
 		padding: 5px;
 		margin: 0;
-	}
+	}*/
 	.about-us__left-side__top {
 		font-size: 18px;
 	}
@@ -327,32 +335,31 @@ img {
 		flex-direction: row;
 	}
 	.navbar__contacts .nav-item {
-		padding: 0 7px;
+		margin: 0 2px;
 	}
-	.services__buttons button {
+	/*.services__buttons button {
 		margin: 0;
-	}
+	}*/
 	.about-us__left-side__top {
 		font-size: 16px;
 	}
 	.gallery .card-body {
 		left: 0px;
 	}
+	.about-us__left-side__top {
+		padding: 0 30px;
+	}
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-	.services__buttons button {
+	/*.services__buttons button {
 		padding: 5px;
 		margin: 0;
-	}
+	}*/
 }
 @media (max-width: 767.98px) {
 	.navbar__contacts .nav-item {
 		padding: 0 3px;
 		font-size: 12px;
-	}
-	.ya-share2__badge span {
-		max-width: 20px;
-		max-height: 20px;
 	}
 	.presentation .row {
 		text-align: center;
@@ -360,9 +367,9 @@ img {
 	.presentation__left-side {
 		padding: 0 0 30px 0;
 	}
-	.services__buttons button {
+	/*.services__buttons button {
 		font-size: 16px;
-	}
+	}*/
 	.about-us__left-side {
 		padding: 0 0 30px 0;
 	}
@@ -376,12 +383,34 @@ img {
 }
 @media (max-width: 575.98px) {
 	.services__buttons button {
-		font-size: 12px;
+		font-size: 16px;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.contacts ul {
+	padding: 0 0 0 80px;
 	}
 }
-@media (max-width: 575.98px) {
 
+.contacts h2 {
+	padding: 40px 0;
 }
 
-
-
+.contacts i  {
+	color: #303030;
+	font-size: 18px;
+	padding: 0 5px;
+}
+.contacts ul {
+	list-style-type: none;
+}
+.contacts li {
+	padding: 10px 0;
+	font-size: 18px;
+}
+.contacts a {
+	padding: 0;
+	color: #303030;
+	text-decoration: underline;
+}
