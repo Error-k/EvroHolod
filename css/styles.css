@@ -385,12 +385,9 @@ img {
 	.services__buttons button {
 		font-size: 16px;
 	}
-	body {
-		overflow-x: hidden;
-	}
-	.contacts ul {
-	padding: 0 0 0 0px;
-	}
+	/*.contacts ul {
+	padding: 0 0 0 80px;
+	}*/
 }
 
 .contacts h2 {
