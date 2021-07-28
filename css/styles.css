@@ -4,6 +4,7 @@ body, html {
 	font-size: 14px;
 	font-family: 'Ubuntu', sans-serif; 
 	color: #303030;
+	height: 100%;
 }
 img {
 	max-width: 100%;
@@ -410,4 +411,15 @@ img {
 	padding: 0;
 	color: #303030;
 	text-decoration: underline;
+}
+.contacts {
+	flex: 1 1 auto;
+}
+.wrapper {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+.footer__row {
+	flex: 0 0 auto;
 }
