@@ -154,3 +154,55 @@ var animGal12 = anime({
 gal12.addEventListener('mouseenter', function() {
     animGal12.play();
 });
+
+var gal13 = document.querySelector('#gallery__img13');
+var animGal13 = anime({
+    targets: '#gallery__card-body13',
+    translateY: -50,
+    opacity: 1,
+    autoplay: false,
+    easing: 'spring(1, 80, 100, 0)',
+    backgroundColor: '#FFF'
+});
+gal13.addEventListener('mouseenter', function() {
+    animGal13.play();
+});
+
+var gal14 = document.querySelector('#gallery__img14');
+var animGal14 = anime({
+    targets: '#gallery__card-body14',
+    translateY: -50,
+    opacity: 1,
+    autoplay: false,
+    easing: 'spring(1, 80, 100, 0)',
+    backgroundColor: '#FFF'
+});
+gal14.addEventListener('mouseenter', function() {
+    animGal14.play();
+});
+
+var gal15 = document.querySelector('#gallery__img15');
+var animGal15 = anime({
+    targets: '#gallery__card-body15',
+    translateY: -50,
+    opacity: 1,
+    autoplay: false,
+    easing: 'spring(1, 80, 100, 0)',
+    backgroundColor: '#FFF'
+});
+gal15.addEventListener('mouseenter', function() {
+    animGal15.play();
+});
+
+var gal16 = document.querySelector('#gallery__img16');
+var animGal16 = anime({
+    targets: '#gallery__card-body16',
+    translateY: -50,
+    opacity: 1,
+    autoplay: false,
+    easing: 'spring(1, 80, 100, 0)',
+    backgroundColor: '#FFF'
+});
+gal16.addEventListener('mouseenter', function() {
+    animGal16.play();
+});
