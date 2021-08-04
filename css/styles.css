@@ -258,20 +258,28 @@ img {
 	max-width: 250px;
 	max-height: 400px;
 }
-.service1, .service2, .service3, .service4 {
+.service5 {
 	padding: 20px 0;
 	background: #F8F8F8;
 }
-.service1 img, .service2 img, .service3 img, .service4 img{
+.service1, .service3 {
+	padding: 20px 0;
+	background: linear-gradient(#F8F8F8, #D1F3FF);
+}
+.service2, .service4 {
+	padding: 20px 0;
+	background: linear-gradient(#D1F3FF, #F8F8F8);
+}
+.service1 img, .service2 img, .service3 img, .service4 img, .service5 img{
 	max-height: 550px;
 }
-.service1 button, .service2 button, .service3 button, .service4 button {
+.service1 button, .service2 button, .service3 button, .service4 button, .service5 button {
 	padding: 9px 22px;
 	margin: 10px 0 0 0;
 	border-radius: 5px;
 	font-size: 18px;	
 }
-.service1__left-side, .service2__left-side, .service3__left-side, .service4__left-side{
+.service1__left-side, .service2__left-side, .service3__left-side, .service4__left-side, .service5__left-side{
 	font-size: 18px;
 }
 .gallery {
@@ -419,6 +427,9 @@ img {
  	}
  	.gallery .card-body {
  		opacity: 1;
+ 	}
+ 	.dividingRow1, .dividingRow2 {
+ 		height: 50px;
  	}
 }
 @media (max-width: 575.98px) {
