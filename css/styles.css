@@ -166,7 +166,7 @@ img {
 	color: #303030;
 	font-size: 30px;
 }
-#clients__slider .carousel-inner{
+#clients__slider .carousel-inner {
 	height: 100px !important;
 }
 .button-up {		
@@ -431,6 +431,10 @@ img {
  	.gallery .card-body {
  		opacity: 1;
  	}
+ 	.clients img {
+		max-height: 80px;
+		max-width: 130px;
+	}
  	.dividingRow1, .dividingRow2 {
  		height: 50px;
  	}
